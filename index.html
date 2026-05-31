@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Access News Weekly</title>
+    <meta name="description" content="Accessible current events for every learner, every Friday.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Access News Weekly home">
+        <img src="assets/anw-logo.png" alt="Access News Weekly logo">
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#how">How it works</a>
+        <a href="#sample">Sample issue</a>
+        <a href="#teachers">Teachers</a>
+        <a href="#schools">Schools</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="button button-small" href="#meeting">Book a meeting</a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">The world, understood. Every week. Every level.</p>
+          <h1>Current events made accessible for every learner.</h1>
+          <p class="lead">Access News Weekly gives special education teachers five age-respectful news stories every Friday, each adapted into three reading levels with vocabulary, comprehension checks, and Social Passport conversation scripts.</p>
+          <div class="actions">
+            <a class="button" href="#meeting">Book a meeting</a>
+            <a class="button button-secondary" href="#sample">View sample Friday Five</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="assets/anw-ad-2.png" alt="Students reading an Access News Weekly classroom newspaper">
+        </div>
+      </section>
+
+      <section class="section problem">
+        <div>
+          <p class="eyebrow">The accessibility gap</p>
+          <h2>News moves fast. Classrooms need access.</h2>
+        </div>
+        <p>Many students are left out of current-events conversations because news is often too abstract, too text-heavy, too fast, or too emotionally intense. Access News Weekly turns timely topics into predictable, classroom-ready reading and discussion.</p>
+      </section>
+
+      <section class="section feature-grid" id="how">
+        <div class="section-heading">
+          <p class="eyebrow">How it works</p>
+          <h2>The Friday Five routine</h2>
+          <p>One weekly issue. Five story categories. Three reading levels. Shared classroom conversation.</p>
+        </div>
+        <div class="steps">
+          <article>
+            <span>1</span>
+            <h3>Choose the issue</h3>
+            <p>Open the weekly Friday Five and preview the stories before teaching.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Pick a level</h3>
+            <p>Use Access, Instructional, or Independent text for each learner or group.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Read and discuss</h3>
+            <p>Build vocabulary, comprehension, background knowledge, and conversation.</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>Use Social Passport</h3>
+            <p>Give students language they can use with peers, staff, and family.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div>
+          <p class="eyebrow">Product preview</p>
+          <h2>Same stories. Different levels. Every learner included.</h2>
+          <p>Access News Weekly is built for mixed-ability classrooms where students can learn about the same topic from different entry points. The language changes. The dignity of the topic does not.</p>
+          <ul class="check-list">
+            <li>Five current-events stories every week</li>
+            <li>Three reading levels for each story</li>
+            <li>Power Words and comprehension checks</li>
+            <li>Teacher notes and sensory-aware preview notes</li>
+            <li>Printable classroom-friendly issue pages</li>
+          </ul>
+        </div>
+        <img class="rounded-image" src="assets/anw-infographic.png" alt="Access News Weekly infographic explaining the Friday Five and three reading levels">
+      </section>
+
+      <section class="section levels">
+        <div class="section-heading">
+          <p class="eyebrow">Three reading levels</p>
+          <h2>Designed for access without talking down.</h2>
+        </div>
+        <article>
+          <h3>Level 1: Access</h3>
+          <p>Short, concrete sentences for emerging readers, students who use AAC, and learners who need strong visual or language support.</p>
+        </article>
+        <article>
+          <h3>Level 2: Instructional</h3>
+          <p>Plain English, clear cause and effect, and embedded vocabulary for growing readers and literal thinkers.</p>
+        </article>
+        <article>
+          <h3>Level 3: Independent</h3>
+          <p>Richer context and academic vocabulary for students ready for supported nonfiction reading and discussion.</p>
+        </article>
+      </section>
+
+      <section class="section passport">
+        <div>
+          <p class="eyebrow">Signature feature</p>
+          <h2>Social Passport turns news into connection.</h2>
+          <p>News is social currency. Students are not only learning facts; they are gaining words they can use to join conversations at school, at home, and in the community.</p>
+        </div>
+        <blockquote>Ask someone: Did you know students helped clean a beach this week?</blockquote>
+      </section>
+
+      <section class="issue-section" id="sample">
+        <div class="issue-header">
+          <div>
+            <p class="eyebrow">Sample Friday Five</p>
+            <h2>A Week of Accessible News</h2>
+            <p>Demo issue for teachers, schools, and districts.</p>
+          </div>
+          <button class="button button-secondary print-button" type="button" onclick="window.print()">Print issue</button>
+        </div>
+        <div id="issue" class="issue-grid" aria-live="polite"></div>
+        <div class="cta-line">
+          <h3>Want this every Friday?</h3>
+          <a class="button" href="#meeting">Book a meeting</a>
+          <a class="button button-secondary" href="#contact">Request access</a>
+        </div>
+      </section>
+
+      <section class="section audience" id="teachers">
+        <div class="section-heading">
+          <p class="eyebrow">For teachers</p>
+          <h2>Built for real special education classrooms.</h2>
+          <p>Use it for SDC, RSP, inclusion, SLP sessions, English learners, transition programs, morning meeting, or a predictable Friday routine.</p>
+        </div>
+        <div class="benefits">
+          <p>Saves preparation time</p>
+          <p>Supports nonfiction comprehension</p>
+          <p>Builds academic vocabulary</p>
+          <p>Encourages communication</p>
+          <p>Creates IEP-aligned progress monitoring support</p>
+        </div>
+      </section>
+
+      <section class="section audience" id="schools">
+        <div class="section-heading">
+          <p class="eyebrow">For schools and districts</p>
+          <h2>A practical accessibility-first current events resource.</h2>
+          <p>Access News Weekly supports age-respectful materials, human-reviewed content, privacy-conscious design, print-friendly classroom use, and predictable weekly implementation.</p>
+        </div>
+        <div class="pricing">
+          <article>
+            <h3>Founding Classroom Access</h3>
+            <p>Early access for individual teachers and classroom teams.</p>
+            <a href="#contact">Request access</a>
+          </article>
+          <article>
+            <h3>School Access</h3>
+            <p>For schools, departments, programs, and pilot teams.</p>
+            <a href="#meeting">Book a meeting</a>
+          </article>
+          <article>
+            <h3>District Access</h3>
+            <p>For district-wide adoption conversations and pricing.</p>
+            <a href="#contact">Contact for pricing</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split about">
+        <div>
+          <p class="eyebrow">About Lydia</p>
+          <h2>Teacher-created from a real classroom need.</h2>
+          <p>Access News Weekly grew from a real classroom need: students deserve current, age-respectful, accessible materials that help them understand the world and talk about it.</p>
+          <p><strong>Lydia Michelle Morales</strong><br>M.A. Special Education, M.A. Educational Therapy, B.A. Child and Adolescent Development</p>
+        </div>
+        <img class="rounded-image" src="assets/anw-ad.png" alt="Access News Weekly promotional graphic">
+      </section>
+
+      <section class="forms" id="contact">
+        <form class="contact-form" name="contact" data-demo-form>
+          <p class="eyebrow">Contact</p>
+          <h2>Request access or send a message.</h2>
+          <label>Name <input required name="name" autocomplete="name"></label>
+          <label>Email <input required type="email" name="email" autocomplete="email"></label>
+          <label>Role <input name="role"></label>
+          <label>School or organization <input name="organization"></label>
+          <label>Interest type
+            <select name="interest">
+              <option>Classroom access</option>
+              <option>School access</option>
+              <option>District access</option>
+              <option>Partnership</option>
+              <option>Media</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>Message <textarea name="message" rows="4"></textarea></label>
+          <button class="button" type="submit">Send message</button>
+          <p class="form-status" role="status"></p>
+        </form>
+
+        <form class="contact-form" id="meeting" name="meeting" data-demo-form>
+          <p class="eyebrow">Book a meeting</p>
+          <h2>Start a school or district conversation.</h2>
+          <label>Name <input required name="name" autocomplete="name"></label>
+          <label>Email <input required type="email" name="email" autocomplete="email"></label>
+          <label>Role <input name="role"></label>
+          <label>School or organization <input name="organization"></label>
+          <label>Preferred times <textarea name="times" rows="3"></textarea></label>
+          <label>Message <textarea name="message" rows="4"></textarea></label>
+          <button class="button" type="submit">Request meeting</button>
+          <p class="form-status" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="assets/anw-logo.png" alt="">
+      <p>The world, understood. Every week. Every level.</p>
+      <a href="mailto:Lydmorales28@yahoo.com">Lydmorales28@yahoo.com</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
