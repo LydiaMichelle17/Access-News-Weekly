@@ -184,6 +184,13 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.portrait-preview {
+  justify-self: center;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .section,
 .issue-section,
 .forms {
@@ -207,6 +214,20 @@ h3 {
 .problem p:last-child {
   font-size: 1.15rem;
   margin: 0;
+}
+
+.system-callout {
+  align-items: center;
+  background: var(--blue-soft);
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.system-callout p:last-child {
+  color: var(--muted);
+  font-size: 1.08rem;
+  max-width: 780px;
 }
 
 .section-heading {
@@ -279,6 +300,10 @@ h3 {
   position: absolute;
 }
 
+.inline-button {
+  margin-top: 1.1rem;
+}
+
 .levels {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -290,25 +315,6 @@ h3 {
 .levels article:nth-child(2) { border-top: 6px solid var(--teal); }
 .levels article:nth-child(3) { border-top: 6px solid #7160aa; }
 .levels article:nth-child(4) { border-top: 6px solid #2e7ebd; }
-
-.passport {
-  align-items: center;
-  background: var(--blue-soft);
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: 1fr 1fr;
-}
-
-blockquote {
-  background: var(--white);
-  border-left: 8px solid var(--gold);
-  border-radius: 8px;
-  box-shadow: var(--shadow);
-  font-size: clamp(1.35rem, 3vw, 2.2rem);
-  font-weight: 800;
-  margin: 0;
-  padding: 1.5rem;
-}
 
 .issue-section {
   background: var(--white);
@@ -384,6 +390,32 @@ blockquote {
   white-space: pre-line;
 }
 
+.vocabulary-list {
+  background: var(--blue-soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin: 0 0 1rem;
+  padding: .9rem 1rem;
+}
+
+.vocabulary-list h4 {
+  color: var(--navy);
+  font-size: 1rem;
+  margin: 0 0 .45rem;
+}
+
+.vocabulary-list ul {
+  display: grid;
+  gap: .35rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vocabulary-list li {
+  margin: 0;
+}
+
 .story-support {
   display: grid;
   gap: .75rem;
@@ -440,6 +472,16 @@ blockquote {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.single-form-section {
+  background: var(--blue-soft);
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
+}
+
+.combined-form {
+  width: 100%;
 }
 
 .contact-form {
@@ -499,6 +541,186 @@ textarea {
   color: var(--white);
 }
 
+.bio-hero {
+  align-items: center;
+  background: linear-gradient(120deg, var(--paper) 0%, var(--blue-soft) 100%);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, .75fr);
+  padding: clamp(2.5rem, 7vw, 6rem) clamp(1rem, 5vw, 4rem);
+}
+
+.bio-copy h1 {
+  max-width: 12ch;
+}
+
+.bio-photo {
+  border: 8px solid var(--white);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  justify-self: center;
+  max-height: 560px;
+  object-fit: cover;
+  object-position: center;
+  width: min(100%, 430px);
+}
+
+.bio-content {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, .55fr);
+  padding: clamp(2.5rem, 6vw, 5rem) clamp(1rem, 5vw, 4rem);
+}
+
+.bio-card,
+.bio-aside {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: clamp(1.2rem, 3vw, 2rem);
+}
+
+.bio-card p {
+  font-size: 1.08rem;
+  margin: 0 0 1rem;
+}
+
+.bio-card p:last-child {
+  margin-bottom: 0;
+}
+
+.bio-aside {
+  align-self: start;
+  background: var(--navy);
+  color: var(--white);
+}
+
+.bio-aside h2 {
+  color: var(--white);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.bio-aside p {
+  margin: 1rem 0 1.25rem;
+}
+
+.system-hero {
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, .9fr) minmax(320px, 1.1fr);
+  padding: clamp(2.5rem, 7vw, 6rem) clamp(1rem, 5vw, 4rem);
+}
+
+.system-hero h1 {
+  max-width: 11ch;
+}
+
+.system-section,
+.system-band,
+.system-quote {
+  padding: clamp(2.5rem, 6vw, 5rem) clamp(1rem, 5vw, 4rem);
+}
+
+.system-section {
+  background: var(--paper);
+}
+
+.system-cards,
+.level-detail-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.system-cards.five {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.system-cards article,
+.level-detail-grid article {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(13, 43, 85, .08);
+  padding: 1.2rem;
+}
+
+.level-detail-grid article:nth-child(1) {
+  border-top: 6px solid var(--teal);
+}
+
+.level-detail-grid article:nth-child(2) {
+  border-top: 6px solid #7160aa;
+}
+
+.level-detail-grid article:nth-child(3) {
+  border-top: 6px solid #2e7ebd;
+}
+
+.level-detail-grid ul {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.system-band {
+  align-items: center;
+  background: var(--navy);
+  color: var(--white);
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(0, .9fr) minmax(280px, .75fr);
+}
+
+.system-band h2,
+.system-band .eyebrow {
+  color: var(--white);
+}
+
+.friday-list {
+  display: grid;
+  gap: .6rem;
+}
+
+.friday-list span {
+  background: rgba(255, 255, 255, .12);
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 8px;
+  color: var(--white);
+  font-weight: 900;
+  padding: .8rem 1rem;
+}
+
+.two-column {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.safety {
+  background: var(--teal-dark);
+}
+
+.safety .check-list li::before {
+  color: var(--gold);
+}
+
+.system-quote {
+  background: var(--white);
+  text-align: center;
+}
+
+.system-quote p {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  margin: 1rem auto 1.5rem;
+  max-width: 900px;
+}
+
+.system-quote .actions {
+  justify-content: center;
+}
+
 @media (max-width: 980px) {
   .site-header {
     align-items: flex-start;
@@ -508,8 +730,13 @@ textarea {
   .hero,
   .problem,
   .split,
-  .passport,
-  .forms {
+  .system-callout,
+  .system-hero,
+  .system-band,
+  .two-column,
+  .forms,
+  .bio-hero,
+  .bio-content {
     grid-template-columns: 1fr;
   }
 
@@ -521,6 +748,9 @@ textarea {
   .levels,
   .pricing,
   .benefits,
+  .system-cards,
+  .system-cards.five,
+  .level-detail-grid,
   .story-support {
     grid-template-columns: 1fr 1fr;
   }
@@ -535,6 +765,9 @@ textarea {
   .levels,
   .pricing,
   .benefits,
+  .system-cards,
+  .system-cards.five,
+  .level-detail-grid,
   .story-support {
     grid-template-columns: 1fr;
   }
@@ -559,7 +792,6 @@ textarea {
   .feature-grid,
   .split,
   .levels,
-  .passport,
   .audience,
   .forms,
   .print-button,
